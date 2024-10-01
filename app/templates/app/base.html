@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- saved from url=(0020)https://bclub.co.in/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Business Club</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'images/logo(1).png' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="{% static 'css/css2' %}" rel="stylesheet">
+
+    {% block extra-css %}
+    <!-- Icon Font Stylesheet -->
+    <link href="{% static 'css/all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap1.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style1.css' %}" rel="stylesheet">
+    {% endblock extra-css %}
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+</head>
+
+
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    {% comment %}
+    <div class="container-fluid sticky-top" style="background-color: rgb(0, 0, 0) !important; top: -150px;">
+        <div class="why">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                  <div style="width: 80%; padding-top: 4.5%;">
+                  <a href="https://bclub.co.in/index.html">
+                      <img src="{% static 'images/whitelogo.png' %}" style="width: 18%;float: inline-start;">
+                      <h2 class="text-white">BUSINESS CLUB</h2>
+                  </a>
+                  </div>
+                  <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                      <div class="navbar-nav ms-auto" style="background-color: black;">
+                          <a href="/" class="nav-item nav-link active">Home</a>
+                          <a href="#" class="nav-item nav-link" target="_blank">Membership</a>
+                          <a href="#" class="nav-item nav-link">AboutUs</a>
+                          <a href="#" class="nav-item nav-link">Our History</a>
+                          <a href="https://bclub.co.in/contact/contact.html" class="nav-item nav-link">Contact</a>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </div>
+      </div>
+    {% endcomment %}
+
+
+        <div class="container-fluid sticky-top" style="background-color: rgb(0, 0, 0) !important; top: -150px;">
+            <div class="that">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                  <a href="https://bclub.co.in/index.html" class="navbar-brand">
+                      <img src="{% static 'images/whitelogo.png' %}" style="width: 17.5%; float: inline-start; padding-top: 2.5%;">
+                      <h2 class="text-white" style="padding-top: 3%;">ROYAL NANDHI</h2>
+                  </a>
+                  <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                      <div class="navbar-nav ms-auto">
+                          <a href="/" class="nav-item nav-link active">Home</a>
+                          <a href="#" class="nav-item nav-link" target="_blank">Membership</a>
+                          <a href="https://bclub.co.in/blog/index.html" class="nav-item nav-link">About Us</a>
+                          <a href="https://bclub.co.in/modules.html" class="nav-item nav-link">Our History</a>
+                          <a href="https://bclub.co.in/contact/contact.html" class="nav-item nav-link">Contact</a>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </div>
+      </div>
+    <!-- Navbar End -->
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block footer %}
+    {% endblock footer %}
+
+
+    <!-- Back to Top -->
+    <a href="https://bclub.co.in/#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2" style="display: none;"><i class="bi bi-arrow-up"></i></a>
+
+    {% block extra-js %}
+
+    <!-- JavaScript Libraries -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/easing.min.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/counterup.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main1.js' %}"></script>
+    {% endblock extra-js %}
+
+</body></html>

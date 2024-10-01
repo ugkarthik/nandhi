@@ -1,0 +1,851 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <style>
+        @media only screen and (max-width: 600px) {
+          .img {
+            display: none;
+          }
+        }
+        @media only screen and (min-width: 600px) {
+          .stuff {
+            display: none;
+          }
+        }
+      </style>
+
+
+    <!-- Main Start -->
+    <div class="img">
+    <div class="container-fluid pt-5 bg-primary hero-header bg2" style="background-image: url({% static 'images/sky.jpg' %}); padding-left: 0% !important;">
+        <div class="container pt-5" style="max-width: 100% !important; padding-left: 0 !important;">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img" src="{% static 'images/building4.png' %}" alt="" style="height: 550px;">
+                </div>
+
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5" style="padding-left: 5%;">
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">WELCOME TO</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">BUSINESS CLUB</h1>
+                    <p class="text-white mb-4 animated slideInRight">Royal Nandhi, Tamilnadu</p>
+                    <a href="https://bclub.co.in/#about" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
+                    <a href="https://bclub.co.in/contact/contact.html" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stuff">
+        <div class="container-fluid pt-5 bg-primary hero-header bg2" style="background-image: url({% static 'images/sky.jpg' %}); height: 310px;">
+
+                    <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5" style="padding-left: 5%;">
+                        <h1 class="display-4 text-white mb-4 animated slideInRight">WELCOME TO</h1>
+                        <h1 class="display-4 text-white mb-4 animated slideInRight">BUSINESS CLUB</h1>
+                        <p class="text-white mb-4 animated slideInRight">Royal Nandhi, Tamilnadu</p>
+                        <a href="https://bclub.co.in/#about" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
+                        <a href="https://bclub.co.in/contact/contact.html" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                    </div>
+            </div>
+    </div>
+    <!-- Main End -->
+
+    <style>
+        @media only screen and (max-width: 600px) {
+          .this {
+            height: 300px;
+          }
+        }
+      </style>
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" style="margin-top : 30px;" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                    <div class="about-img">
+                        <div class="this">
+                        <img class="img-fluid" src="{% static 'images/car1.JPG' %}" style="height: 500px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                    <h1 class="mb-4">We are a Knowledge based society in Royal Kavery Thanjavur</h1>
+                    <p class="mb-4">Business Club, Royal Kavery Thanjavur, also known as RVClub, is a student-run organization that provides a platform for students to learn about and explore the world of business.
+                        It is one of the largest and most active student organizations on campus, with over 1000 members.</p>
+                    <p class="mb-4">The business club bridges the gap between business and technology, equipping students with skills and knowledge to succeed in the business world.
+                        It organizes various events, including workshops, seminars, webinars, knowledge meets, and case competitions.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>CASE STUDIES</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>HACKATHONS</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>TRADING COMPETITIONS</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>WHITEPAPERS</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-primary rounded-pill px-4 me-3" href="https://bclub.co.in/#wings">Read More</a>
+                        <a class="btn btn-outline-primary btn-square me-3" href="https://www.facebook.com/bclubkgp" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-3" href="https://www.instagram.com/bclub.iitkgp/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href="https://www.linkedin.com/company/bclubiitkgp/?originalSubdomain=in" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <style>
+        @media only screen and (max-width: 600px) {
+          .that {
+            display: none;
+          }
+        }
+        @media only screen and (min-width: 600px) {
+          .why {
+            display: none;
+          }
+        }
+      </style>
+
+    <!-- Three Wings -->
+    <div class="that">
+    <div class="container-fluid bg-light mt-5 py-5" style="margin-top: 0px !important;" id="wings">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                    <h1 class="mb-4">The three wings of Business Club</h1>
+                    <p class="mb-4">Business Club has three wings: Strategy, Finance, and Analytics.
+Each wing focuses on a different aspect of business and offers students opportunities to learn from industry experts and gain hands-on experience.
+</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="https://bclub.co.in/modules.html">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                        <img src="{% static 'images/strat.png' %}" style="width: 50%;">
+                                        </div>
+                                        <h5 class="mb-3">Strategy</h5>
+                                        <p>The Strategy wing has a strong track record of success in case competitions, with students winning several top prizes in recent years.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="https://bclub.co.in/modules.html#Strategy">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <img src="{% static 'images/finance.png' %}" style="width: 50%;">
+                                        </div>
+                                        <h5 class="mb-3">Finance</h5>
+                                        <p>The Finance wing has partnered with several leading financial institutions to offer students hands-on experience in investment banking, corporate finance, and other areas.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="https://bclub.co.in/modules.html#Finance">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s" style="padding-top: 50%; visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                        <img src="{% static 'images/analytics.png' %}" style="width: 50%;">
+                                        </div>
+                                        <h5 class="mb-3">Analytics</h5>
+                                        <p>The Analytics wing has partnered with several leading technology companies to offer students hands-on experience in data science, machine learning, and other areas.
+                                        </p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="https://bclub.co.in/modules.html#Analytics">Read More</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="why">
+        <div class="container-fluid bg-light mt-5 py-5" style="margin-top: 0px !important;" id="wings">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                        <h1 class="mb-4">The three wings of Business Club</h1>
+                        <p class="mb-4">Business Club has three wings: Strategy, Finance, and Analytics.
+    Each wing focuses on a different aspect of business and offers students opportunities to learn from industry experts and gain hands-on experience.
+    </p>
+                        <a class="btn btn-primary rounded-pill px-4" href="https://bclub.co.in/modules.html">Read More</a>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="row g-4">
+                                    <div class="col-12 wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                            <div class="service-icon btn-square">
+                                            <img src="{% static 'images/strat.png' %}" style="width: 50%;">
+                                            </div>
+                                            <h5 class="mb-3">Strategy</h5>
+                                            <p>The Strategy wing has a strong track record of success in case competitions, with students winning several top prizes in recent years.</p>
+                                            <a class="btn px-3 mt-auto mx-auto" href="https://bclub.co.in/modules.html#Strategy">Read More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 wow fadeIn animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                            <div class="service-icon btn-square">
+                                                <img src="{% static 'images/finance.png' %}" style="width: 50%;">
+                                            </div>
+                                            <h5 class="mb-3">Finance</h5>
+                                            <p>The Finance wing has partnered with several leading financial institutions to offer students hands-on experience in investment banking, corporate finance, and other areas.</p>
+                                            <a class="btn px-3 mt-auto mx-auto" href="https://bclub.co.in/modules.html#Finance">Read More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 wow fadeIn animated" data-wow-delay="0.5s" "="" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                            <div class="service-icon btn-square">
+                                            <img src="{% static 'images/analytics.png' %}" style="width: 50%;">
+                                            </div>
+                                            <h5 class="mb-3">Analytics</h5>
+                                            <p>The Analytics wing has partnered with several leading technology companies to offer students hands-on experience in data science, machine learning, and other areas.
+                                            </p>
+                                            <a class="btn px-3 mt-auto mx-auto" href="https://bclub.co.in/modules.html#Analytics">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Three Wings End -->
+
+
+    <!-- ICC Start -->
+    <div class="that">
+    <div class="container-fluid bg-primary feature pt-5" style="background-image: url({% static 'images/bg2.avif' %}) !important;">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn icc-main" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+
+                    <div class="icc" style="width: 100%;"><br><br>
+                        <h1 class="text-white mb-4">ICC 2024 - Asia's Largest Case Study Competition</h1>
+                        <p class="text-light mb-4" style="padding-right: 10%;">The Indian Case Challenge (ICC) is India’s top Business Strategy Case Study competition, hosted by the Business Club in collaboration with Kshitij, IIT Kharagpur’s Techno-Management fest.</p>
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span>Prizes worth INR 1,50,000+ at stake</span>
+                        </div>
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span>Asia’s largest Case Study Study Competition</span>
+                        </div>
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span>Previous collaborations with Media Tech, Ernst and Young, IBM, RBI and many more</span>
+                        </div>
+                    </div>
+
+                    <div class="icc" style="width: 100%; padding-top: 10%;">
+                        <div class="row g-4 pt-3">
+                            <div class="col-sm-6">
+                                <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                    <img src="{% static 'images/participant.png' %}" style="height: 50px;">
+                                    <div class="ms-3">
+                                        <h2 class="text-white mb-0" data-toggle="counter-up">5000</h2>
+                                        <p class="text-white mb-0">Participants</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                    <img src="{% static 'images/international.png' %}" style="height: 50px;">
+                                    <div class="ms-3">
+                                        <h2 class="text-white mb-0" data-toggle="counter-up">43</h2>
+                                        <p class="text-white mb-0">International teams</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                    <img src="{% static 'images/cash.png' %}" style="height: 50px;">
+                                    <div class="ms-3">
+                                        <h2 class="text-white mb-0" data-toggle="counter-up">175000</h2>
+                                        <p class="text-white mb-0">Cash Prize</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                    <img src="{% static 'images/insti.png' %}" style="height: 50px;">
+                                    <div class="ms-3">
+                                        <h2 class="text-white mb-0" data-toggle="counter-up">650</h2>
+                                        <p class="text-white mb-0">Institutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="why">
+        <div class="container-fluid bg-primary feature pt-5" style="background-image: url({% static 'images/bg2.avif' %}) !important;">
+
+                    <div data-wow-delay="0.3s">
+
+                        <div style="width: 100%;"><br><br>
+                            <h1 class="text-white mb-4">ICC 2024 - Asia's Largest Case Study Competition</h1>
+                            <p class="text-light mb-4" style="padding-right: 10%;">The Indian Case Challenge (ICC) is India’s top Business Strategy Case Study competition, hosted by the Business Club in collaboration with Kshitij, IIT Kharagpur’s Techno-Management fest.</p>
+                            <div class="d-flex align-items-center text-white mb-3">
+                                <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <span>Prizes worth INR 1,75,000+ at stake</span>
+                            </div>
+                            <div class="d-flex align-items-center text-white mb-3">
+                                <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <span>Asia’s largest Case Study Study Competition</span>
+                            </div>
+                            <div class="d-flex align-items-center text-white mb-3">
+                                <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <span>Collaborations with multiple organizations</span>
+                            </div>
+                        </div>
+
+                        <div style="width: 100%; padding-top: 5%;">
+                            <br>
+                                    <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                        <img src="{% static 'images/participant.png' %}" style="height: 50px;">
+                                        <div class="ms-3">
+                                            <h2 class="text-white mb-0" data-toggle="counter-up">5000</h2>
+                                            <p class="text-white mb-0">Participants</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                <div class="col-sm-6">
+                                    <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                        <img src="{% static 'images/international.png' %}" style="height: 50px;">
+                                        <div class="ms-3">
+                                            <h2 class="text-white mb-0" data-toggle="counter-up">43</h2>
+                                            <p class="text-white mb-0">International teams</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-sm-6">
+                                    <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                        <img src="{% static 'images/cash.png' %}" style="height: 50px;">
+                                        <div class="ms-3">
+                                            <h2 class="text-white mb-0" data-toggle="counter-up">175000</h2>
+                                            <p class="text-white mb-0">Cash Prize</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-sm-6">
+                                    <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                        <img src="{% static 'images/insti.png' %}" style="height: 50px;">
+                                        <div class="ms-3">
+                                            <h2 class="text-white mb-0" data-toggle="counter-up">650</h2>
+                                            <p class="text-white mb-0">Institutes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                    </div>
+                    <br>
+                    </div>
+                </div>
+            </div>
+
+    <!-- ICC End -->
+
+    <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+        <h2 class="text-white" style="float: none;">Our Partners</h2>
+        <img class="img-fluid" src="{% static 'images/feature.png' %}" alt="" style="float: inline-end; width: 200px;">
+        <img class="img-fluid" src="{% static 'images/feature.png' %}" alt="" style="float: inline-end; width: 200px;">
+        <img class="img-fluid" src="{% static 'images/feature.png' %}" alt="" style="float: inline-end; width: 200px;">
+        <img class="img-fluid" src="{% static 'images/feature.png' %}" alt="" style="float: inline-end; width: 200px;">
+        <img class="img-fluid" src="{% static 'images/feature.png' %}" alt="" style="float: inline-end; width: 200px;">
+    </div>
+
+    <div class="that">
+    <section class="section section-default mt-none mb-none">
+        <div class="container" style="text-align: center;">
+            <h1 class="">Partnerships and Sponsorships</h1>
+            <strong>
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="square-holder">
+                        <img alt="" src="{% static 'images/A.png' %}" height="100px">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="square-holder">
+                        <img alt="" src="{% static 'images/B.png' %}" height="100px">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="square-holder">
+                        <img alt="" src="{% static 'images/C.png' %}" height="100px">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="square-holder">
+                        <img alt="" src="{% static 'images/D.png' %}" height="100px">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="square-holder">
+                        <img alt="" src="{% static 'images/E.png' %}" height="100px">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="square-holder">
+                        <img alt="" src="{% static 'images/F.png' %}" height="100px">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="square-holder">
+                        <img alt="" src="{% static 'images/H.png' %}" height="100px">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="square-holder">
+                        <img alt="" src="{% static 'images/I.png' %}" height="100px">
+                    </div>
+                </div>
+            </div>
+            </strong>
+        </div>
+    </section>
+    </div>
+
+
+    <div class="why">
+        <section class="section section-default mt-none mb-none">
+            <div class="container" style="text-align: center;">
+                <h1 class="">Partnerships and Sponsorships</h1>
+                <strong>
+                </strong><div class="row" style="margin-top: 40px;"><strong>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="square-holder">
+                            <img alt="" src="{% static 'images/group.PNG' %}" height="220px" width="500px">
+                        </div>
+                    </div>
+                </strong>
+            </div>
+            </div>
+        </section>
+        </div>
+
+
+    <!-- BLOG Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px; visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                <h1 class="mb-4">Explore Our Recent Blogs</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s" style="margin-top: 30px; visibility: hidden; animation-delay: 0.3s; animation-name: none;" tyle="height:230.455px;">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="{% static 'images/private-jets00.png' %}" alt="">
+                        <a class="case-overlay text-decoration-none" href="https://bclub.co.in/blog/private_jets.html">
+                            <small>Blog by Business Club</small>
+                            <h5 class="lh-base text-white mb-3">PRIVATE JETS: AIRLINES' NEW FRONTIER
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s" style="margin-top: 30px; visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2" style="height:230.455px;">
+                        <img class="img-fluid" src="{% static 'images/nuclear.jpg' %}" alt="">
+                        <a class="case-overlay text-decoration-none" href="https://bclub.co.in/blog/nuclear_industry.html">
+                            <small>Blog by Business Club</small>
+                            <h5 class="lh-base text-white mb-3">NUCLEAR'S MELTDOWN<br><br>
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s" style="margin-top: 30px; visibility: hidden; animation-delay: 0.7s; animation-name: none;">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2" style="height:230.45px;">
+                        <img class="img-fluid" src="{% static 'images/economy.jpg' %}" alt="">
+                        <a class="case-overlay text-decoration-none" href="https://bclub.co.in/blog/economic_implementation.html">
+                            <small>Blog by Business Club</small>
+                            <h5 class="lh-base text-white mb-3">ECONOMIC IMPLICATIONS OF ARTIC CAP MELTING
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BLOG End -->
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Meet The Team</div>
+                    <h1 class="mb-4">Business Club</h1>
+                    <p class="mb-4">
+                        Meet the team at Business Club IIT Kharagpur, a student organization dedicated to helping students learn and grow in the world of business.They are committed to giving back to the community and organize a wide range of events and activities throughout the year, including case competitions, workshops, seminars, and guest lectures.
+                    </p>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                    <div class="owl-carousel testimonial-carousel border-start border-primary owl-loaded owl-drag">
+
+
+
+
+
+
+
+
+
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-8190px, 0px, 0px); transition: all; width: 11970px;"><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="./Business Club_files/aryad.jpeg" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Arya Dighde</h5>
+                                    <span>Head Analytics</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="./Business Club_files/khushboo.jpeg" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Khushboo Nayak</h5>
+                                    <span>Head Analytics</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/manya.jpg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Manya S. Chopra</h5>
+                                    <span>Head Finance</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/aman.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Aman Samriya</h5>
+                                    <span>Head Finance</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/abhiram.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Abhiram Siddanthi</h5>
+                                    <span>Head Web</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/arnavb.png' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Arnav Bansal</h5>
+                                    <span>Governor</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/anshul.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Anshul Trehan</h5>
+                                    <span>Governor</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/aarushi.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Aarushi Mahajan</h5>
+                                    <span>Head Strategy</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/adrika.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Adrika Agarwal</h5>
+                                    <span>Head Strategy</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/aryad.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Arya Dighde</h5>
+                                    <span>Head Analytics</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/khushboo.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Khushboo Nayak</h5>
+                                    <span>Head Analytics</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/manya.jpg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Manya S. Chopra</h5>
+                                    <span>Head Finance</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/aman.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Aman Samriya</h5>
+                                    <span>Head Finance</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item active" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/abhiram.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Abhiram Siddanthi</h5>
+                                    <span>Head Web</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/arnavb.png' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Arnav Bansal</h5>
+                                    <span>Governor</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/anshul.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Anshul Trehan</h5>
+                                    <span>Governor</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/aarushi.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Aarushi Mahajan</h5>
+                                    <span>Head Strategy</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/adrika.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Adrika Agarwal</h5>
+                                    <span>Head Strategy</span>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 630px;"><div class="testimonial-item ps-5">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'images/aryad.jpeg' %}" style="width: 200px; height: 200px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Arya Dighde</h5>
+                                    <span>Head Analytics</span>
+                                </div>
+                            </div>
+                        </div></div></div></div><div class="owl-nav"><div class="owl-prev"><i class="bi bi-chevron-left"></i></div><div class="owl-next"><i class="bi bi-chevron-right"></i></div></div><div class="owl-dots"><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!--Gallery Start-->
+    <style>
+        .image-grid {
+  padding: 12px;
+}
+
+.image-row {
+  display: flex;
+}
+
+.image-row .image {
+  margin: 12px;
+  height: 240px;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3),
+              0 6px 20px rgba(0, 0, 0, 0.15),
+              0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.image-01 {
+  background-image: url("{% static 'images/car1.JPG' %}");
+  flex: 1;
+}
+
+.image-02 {
+  background-image: url("{% static 'images/car2.JPG' %}");
+  flex: 1;
+}
+
+.image-03 {
+  background-image: url("{% static 'images/car3.JPG' %}");
+  flex: 2;
+}
+
+.image-04 {
+  background-image: url("{% static 'images/group.jpeg' %}");
+  flex: 1;
+}
+
+.image-05 {
+  background-image: url("{% static 'images/group.JPG' %}");
+  flex: 2;
+}
+
+.image-06 {
+  background-image: url("{% static 'images/group2.jpeg' %}");
+  flex: 2;
+}
+
+.image-07 {
+  background-image: url("{% static 'images/group3.JPG' %}");
+  flex: 1;
+}
+
+.image-08 {
+  background-image: url("{% static 'images/group4.JPG' %}");
+  flex: 3;
+}
+
+.image-09 {
+  background-image: url("{% static 'images/group5.JPG' %}");
+  flex: 1;
+}
+
+.image-10 {
+  background-image: url("{% static 'images/group6.JPG' %}");
+  flex: 1;
+}
+
+.image-11 {
+  background-image: url("{% static 'images/group7.JPG' %}");
+  flex: 1;
+}
+
+.image-12 {
+  background-image: url("{% static 'images/group8.JPG' %}");
+  flex: 1;
+}
+
+@media screen and (max-width: 300px) {
+  .image-row {
+    flex-direction: column;
+  }
+
+  .image-row .image {
+    flex-basis: auto;
+  }
+}
+    </style>
+
+    <div id="car">
+    <h1 style="text-align: center; margin-top: 40px; margin-bottom: 10px;">Gallery</h1>
+    <div class="image-grid">
+        <div class="image-row">
+          <div class="image image-01"></div>
+          <div class="image image-02"></div>
+          <div class="image image-03"></div>
+        </div>
+        <div class="image-row">
+          <div class="image image-04"></div>
+          <div class="image image-05"></div>
+        </div>
+        <div class="image-row">
+          <div class="image image-06"></div>
+          <div class="image image-07"></div>
+          <div class="image image-08"></div>
+          <div class="image image-09"></div>
+        </div>
+        <div class="image-row">
+          <div class="image image-10"></div>
+          <div class="image image-11"></div>
+          <div class="image image-12"></div>
+        </div>
+      </div>
+    </div>
+    <!--Gallery End-->
+
+    <script>
+        function myFunction() {
+          alert("Thank you. You will recieve updates soon");
+        }
+    </script>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5" id="Finshots">
+
+        <div class="container" style="margin-bottom: 30px;">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                    <img class="img-fluid" src="{% static 'images/Finshots.png' %}" alt="">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                    <h1 class="text-white mb-4">Subscribe to Bclub X Finshots Newsletter</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <form target="_blank" method="POST" action="https://script.google.com/macros/s/AKfycbwhawNLNzcLRXKFIBwim4-uNzt7AeWhTszBJhQsrr90yfD7NFJE979ZNU26Sun1CpwO/exec">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email" name="FINSHOTS" placeholder="Enter Your Email" style="height: 48px;" required="">
+                            <button onclick="myFunction()" type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        </form>
+                    </div>
+                    <small class="text-white-50">Get Notified with the Latest Updates</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="container wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+            <div class="copyright">
+                <div class="row">
+                <p align="center">©Copyright 2020 - Business Club, IIT Kharagpur.<br>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+{% endblock content %}
