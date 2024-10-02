@@ -58,7 +58,7 @@
           <div class="container">
               <nav class="navbar navbar-expand-lg navbar-dark p-0">
                   <div style="width: 80%; padding-top: 4.5%;">
-                  <a href="https://bclub.co.in/index.html">
+                  <a href="{% url 'home' %}">
                       <img src="{% static 'images/whitelogo.png' %}" style="width: 18%;float: inline-start;">
                       <h2 class="text-white">BUSINESS CLUB</h2>
                   </a>
@@ -69,10 +69,10 @@
                   <div class="collapse navbar-collapse" id="navbarCollapse">
                       <div class="navbar-nav ms-auto" style="background-color: black;">
                           <a href="/" class="nav-item nav-link active">Home</a>
-                          <a href="#" class="nav-item nav-link" target="_blank">Membership</a>
-                          <a href="#" class="nav-item nav-link">AboutUs</a>
+                          <a href="{% url 'members' %}" class="nav-item nav-link">Membership</a>
+                          <a href="{% url 'about-us' %}" class="nav-item nav-link">AboutUs</a>
                           <a href="#" class="nav-item nav-link">Our History</a>
-                          <a href="https://bclub.co.in/contact/contact.html" class="nav-item nav-link">Contact</a>
+                          <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
                       </div>
                   </div>
               </nav>
@@ -86,7 +86,7 @@
             <div class="that">
           <div class="container">
               <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                  <a href="https://bclub.co.in/index.html" class="navbar-brand">
+                  <a href="{% url 'home' %}" class="navbar-brand">
                       <img src="{% static 'images/whitelogo.png' %}" style="width: 17.5%; float: inline-start; padding-top: 2.5%;">
                       <h2 class="text-white" style="padding-top: 3%;">ROYAL NANDHI</h2>
                   </a>
@@ -96,10 +96,10 @@
                   <div class="collapse navbar-collapse" id="navbarCollapse">
                       <div class="navbar-nav ms-auto">
                           <a href="/" class="nav-item nav-link active">Home</a>
-                          <a href="#" class="nav-item nav-link" target="_blank">Membership</a>
-                          <a href="https://bclub.co.in/blog/index.html" class="nav-item nav-link">About Us</a>
-                          <a href="https://bclub.co.in/modules.html" class="nav-item nav-link">Our History</a>
-                          <a href="https://bclub.co.in/contact/contact.html" class="nav-item nav-link">Contact</a>
+                          <a href="{% url 'members' %}" class="nav-item nav-link">Membership</a>
+                          <a href="{% url 'about-us' %}" class="nav-item nav-link">About Us</a>
+                          <a href="#" class="nav-item nav-link">Our History</a>
+                          <a href="{% url 'contact-us' %}" class="nav-item nav-link">Contact</a>
                       </div>
                   </div>
               </nav>
@@ -116,7 +116,7 @@
 
 
     <!-- Back to Top -->
-    <a href="https://bclub.co.in/#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2" style="display: none;"><i class="bi bi-arrow-up"></i></a>
+    <a href="/#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2" style="display: none;"><i class="bi bi-arrow-up"></i></a>
 
     {% block extra-js %}
 

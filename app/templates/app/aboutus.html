@@ -151,10 +151,10 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/blogs/">Blogs</a>
+                        <a href="#">Blogs</a>
                     </li>
                     <li>
-                        <a href="https://bclub.co.in/contact/contact.html">Contact</a>
+                        <a href="{% url 'contact-us' %}">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -169,7 +169,7 @@
     <header class="intro-header" style="margin:0;padding:0;background-image: url({% static 'images/aboutus/RoyalCavery.jpeg' %});background-size:fill;">
     <div class="post-heading" align="center" style="padding-top:199px;padding-bottom:50px;">
                         <h1 style="margin-top:125px;color:white;"></h1>
-                        <span class="meta">Posted by <a href="#">Royal Nandhi B-Club, Tamilnadu</a></span>
+                        <span class="meta">Posted by <a href="/">Royal Nandhi B-Club, Tamilnadu</a></span>
                     </div>
 
     </header>
@@ -212,33 +212,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://bclub.co.in/blog/deep_fake.html#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/bclubkgp" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://bclub.co.in/blog/deep_fake.html#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted"><img src="{% static 'images/clublogo.jpg' %}">  Copyright © Royal Nandhi Business Club</p>
+                    <p class="copyright text-muted"><img src="{% static 'images/clublogo.png' %}" width="3%">  Copyright © Royal Nandhi Business Club</p>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Contact</title>
+    <title>RoyalNandhi - Membership</title>
     <link rel="shortcut icon" href="https://bclub.co.in/blog/img/favicon.ico">
 <!-- Google analytics code -->
 <script type="text/javascript" async="" src="{% static 'js/js' %}"></script>
@@ -129,62 +129,13 @@
     <article>
         <div class="container">
             <div class="row">
-                    <section class="contact_section layout_padding-top">
-                        <div class="container-fluid">
-                          <div class="row">
-                            <div class="col-lg-8 col-md-8 offset-md-1">
-                              <div class="heading_container" style="padding-left: 100px;">
-                                <h1>
-                                  CONTACT US
-                                </h1>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-4 col-md-5 offset-md-1">
-                              <div class="form_container" style="padding-left: 100px;">
-                                <form method="post" action="{% url 'contact-us' %}">
-                                    {% csrf_token %}
-                                  <div style="margin-bottom: 20px;">
-                                    <input name="name" type="text" placeholder="Your Name" required="">
-                                  </div>
-                                  <div style="margin-bottom: 20px;">
-                                    <input name="phone" type="text" placeholder="Phone Number" required="">
-                                  </div>
-                                  <div style="margin-bottom: 20px;">
-                                    <input name="email" type="email" placeholder="Email" required="">
-                                  </div>
-                                  <div style="margin-bottom: 20px;">
-                                      <textarea name="message" class="message-box" placeholder="Message" required=""></textarea>
-                                  </div>
-                                  <div class="btn_box" style="margin-bottom: 20px;">
-                                    <button style="background-color: black !important; color: #fff;" type="submit">
-                                      SEND
-                                    </button>
-                                  </div>
-                                </form>
-                                <br>
-                              </div>
-                            </div>
-                              <div class="col-lg-7 col-md-6 px-0">
-          <div style="padding-left: 23%;">
-            <div>
-              <div><img src="{% static 'images/contact.jpg' %}" alt="err" class="img"></div>
-            </div>
-          </div>
-        </div>
-                          </div>
-                        </div>
-                      </section>
-
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="text-align: justify;  text-justify: inter-word;">
+                    <p>You have successfully submitted your details. We will contact you soon.</p>
                 </div>
             </div>
         </div>
     </article>
 
-    <hr>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -200,5 +151,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
 
 </body></html>

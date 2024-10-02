@@ -10,26 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="og:image" content="http://bclub.co.in/blog/img/bank.jpg">
-    <meta property="fb:admins" content="100006371020407">
-    <meta property="fb:admins" content="100004330893852">
-<meta name="og:title" content="World bank and its failure">
-<meta name="og:description" content="Have Global Governance Institutions Failed Developing Countries?">
-<meta name="og:url" content="http://bclub.co.in/blog/deep_fake.html">
-<meta property="og:image" content="http://bclub.co.in/blog/img/bank.jpg">
-    <title>DEEP FAKES</title>
+    <title>Membership</title>
     <link rel="shortcut icon" href="https://bclub.co.in/blog/img/favicon.ico">
 <!-- Google analytics code -->
-<script type="text/javascript" async="" src="{% static 'js/js' %}"></script><script src="{% static 'js/sdk.js' %}" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="{% static 'js/sdk(1).js' %}"></script><script async="" src="{% static 'js/analytics.js' %}"></script><script>
-  (function(i, s, o, g, r, a, m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)}, i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-  ga('create', 'UA-65026905-2', 'auto');
-  ga('send', 'pageview');
-
-</script>
+<script type="text/javascript" async="" src="{% static 'js/js' %}"></script>
 <!-- Google analytics end-->
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
@@ -118,10 +102,10 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/blogs/">Blogs</a>
+                        <a href="#">Blogs</a>
                     </li>
                     <li>
-                        <a href="https://bclub.co.in/contact/contact.html">Contact</a>
+                        <a href="{% url 'contact-us' %}">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -136,7 +120,7 @@
     <header class="intro-header" style="margin:0;padding:0;background-image: url({% static 'images/aboutus/RoyalCavery.jpeg' %});background-size:fill;">
     <div class="post-heading" align="center" style="padding-top:199px;padding-bottom:50px;">
                         <h1 style="margin-top:125px;color:white;"></h1>
-                        <span class="meta">Posted by <a href="#">Royal Nandhi B-Club, Tamilnadu</a></span>
+                        <span class="meta">Posted by <a href="/">Royal Nandhi B-Club, Tamilnadu</a></span>
                     </div>
 
     </header>
@@ -150,7 +134,53 @@
                     <p style="text-align: center;"><img src="{% static 'images/aboutus/a3.jpg' %}" width="100%"></p>
 
                     <p style="text-align: center;"><img src="{% static 'images/aboutus/a8.jpg' %}" width="100%"></p>
-                    <p style="text-align: center;"><img src="{% static 'images/aboutus/a10.jpg' %}" width="100%"></p>
+
+                    <p>{% translate "வணிக குழுவில் இணைவதற்கு ரூபாய் 5000 தொகை செலுத்த வேண்டும். கீழ்கண்ட விவரங்களை பதிவிடுங்கள்." %}
+<!--                    <p style="text-align: center;"><img src="{% static 'images/aboutus/a10.jpg' %}" width="100%"></p>-->
+
+                    <section class="contact_section layout_padding-top">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-lg-8 col-md-8 offset-md-1">
+                              <div class="heading_container" style="padding-left: 100px;">
+                                <h1>
+                                  MEMBERSHIP FORM
+                                </h1>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-8 col-md-8 offset-md-1">
+                              <div class="form_container" style="padding-left: 100px;">
+                                <form method="post" action="{% url 'members' %}">
+                                    {% csrf_token %}
+                                  <div style="margin-bottom: 20px;">
+                                    <input name="name" type="text" placeholder="Your Name" required="">
+                                  </div>
+                                  <div style="margin-bottom: 20px;">
+                                    <input name="phone" type="text" placeholder="Phone Number" required="">
+                                  </div>
+                                  <div style="margin-bottom: 20px;">
+                                    <input name="email" type="email" placeholder="Email" required="">
+                                  </div>
+                                  <div style="margin-bottom: 20px;">
+                                      <textarea name="business_location" class="message-box" placeholder="Business Location" required=""></textarea>
+                                  </div>
+                                  <div style="margin-bottom: 20px;">
+                                      <textarea name="business_description" class="message-box" placeholder="About few lines about your business" required=""></textarea>
+                                  </div>
+                                  <div class="btn_box" style="margin-bottom: 20px;">
+                                    <button style="background-color: black !important; color: #fff;" type="submit">
+                                      SUBMIT
+                                    </button>
+                                  </div>
+                                </form>
+                                <br>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
 
                 </div>
             </div>
@@ -164,33 +194,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://bclub.co.in/blog/deep_fake.html#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/bclubkgp" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://bclub.co.in/blog/deep_fake.html#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted"><img src="{% static 'images/clublogo.jpg' %}">  Copyright © Royal Nandhi Business Club, Tamilnadu</p>
+                    <p class="copyright text-muted"><img src="{% static 'images/clublogo.png' %}" width="3%">  Copyright © Royal Nandhi Business Club, Tamilnadu</p>
                 </div>
             </div>
         </div>
@@ -201,11 +205,5 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="{% static 'js/clean-blog.min.js' %}"></script>
-    <img alt="Have Global Governance Institutions Failed Developing Countries?" rel="Facebook image" src="{% static 'images/bank.jpg' %}" style="display: none;">
-
-
 
 </body></html>
