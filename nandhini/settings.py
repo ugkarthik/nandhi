@@ -144,3 +144,5 @@ STATICFILES_DIRS = [
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
+CSRF_TRUSTED_ORIGINS = ['https://web-production-aa476.up.railway.app']
